@@ -1,3 +1,2 @@
-My first vim plugin
-
-Strips out trailing whitespace
+# whitespace.vim
+Clears trailing whitespace from non-markdown files
