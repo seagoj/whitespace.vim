@@ -7,7 +7,7 @@ function! StripTrailingWhitespace()
 endfunction
 
 if has("autocmd")
-    autocmd BufRead,BufNewFile *.md,*.markdown set filetype=markdown
+    " autocmd BufRead,BufNewFile *.md,*.markdown set filetype=markdown
     autocmd FileType markdown let b:noStripWhitespace=1
     autocmd BufWritePre * call StripTrailingWhitespace()
 endif
