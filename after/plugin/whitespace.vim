@@ -5,5 +5,7 @@ elseif whitespace#config() == 'tab'
 	set noexpandtab
 endif
 
+whitespace#tabstop()
+
 let &softtabstop = &tabstop
 let &shiftwidth = &tabstop
