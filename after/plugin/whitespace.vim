@@ -6,7 +6,8 @@ elseif whitespace#config() == 'tab'
 endif
 
 let tabstop_length = whitespace#tabstop()
-set tabstop = tabstop_length		"Number of spaces for a tab
-set softtabstop = tabstop_length	"Softtabstop?
-set shiftwidth = tabstop_length		"Indentation
+
+exe "set tabstop = " . tabstop_length
+exe "set softtabstop = " . tabstop_length
+exe "set shiftwidth = " . tabstop_length
 
