@@ -5,9 +5,8 @@ function! whitespace#config(...)
 	return g:whitespace
 endfunction
 
-g:tabstop=4
 function! whitespace#tabstop(...)
-	if !has_key(g: 'tabstop')
+	if !has_key(g:, 'tabstop')
 		let g:tabstop = 4
 	endif
 	return g:tabstop
