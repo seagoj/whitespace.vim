@@ -5,9 +5,5 @@ elseif whitespace#config() == 'tab'
 	set noexpandtab
 endif
 
-let tabstop_length = whitespace#tabstop()
-
-exe "set tabstop = " . tabstop_length
-exe "set softtabstop = " . tabstop_length
-exe "set shiftwidth = " . tabstop_length
-
+let &softtabstop = &tabstop
+let &shiftwidth = &tabstop
