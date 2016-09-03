@@ -1,10 +1,4 @@
-function! StripTrailingWhitespace()
-    if exists('b:noStripWhitespace')
-        return
-    endif
-    %s/\s\+$//e
-endfunction
-
 if has("autocmd")
-    autocmd BufWritePre * call StripTrailingWhitespace()
+	autocmd BufWritePre * call whitespace#striptrailing()
+	autocmd BufNewFile,BufRead,BufWritePre * :retab!
 endif
