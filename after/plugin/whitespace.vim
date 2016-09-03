@@ -6,7 +6,7 @@ elseif whitespace#config() == 'tab'
 endif
 
 if &tabstop == 8
-	&tabstop=4
+	set tabstop=4
 endif
 
 let &softtabstop = &tabstop
