@@ -5,7 +5,9 @@ elseif whitespace#config() == 'tab'
 	set noexpandtab
 endif
 
-if &tabstop =~# '8'
+echo &tabstop
+
+if &tabstop =~# 8
 	set tabstop = 4
 endif
 
