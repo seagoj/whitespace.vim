@@ -5,6 +5,13 @@ function! whitespace#config(...)
 	return g:whitespace
 endfunction
 
+function! whitespace#tabstop(...)
+	if !has_key(g: 'tabstop')
+		let g:tabstop = 4
+	endif
+	return g:tabstop
+endfunction
+
 function! whitespace#striptrailing(...)
 	if exists('b:noStripWhitespace')
 		return
