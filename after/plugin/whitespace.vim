@@ -5,7 +5,8 @@ elseif whitespace#config() == 'tab'
 	set noexpandtab
 endif
 
-set tabstop=whitespace#tabstop()		"Number of spaces for a tab
-set softtabstop=whitespace#tabstop()	"Softtabstop?
-set shiftwidth=whitespace#tabstop()		"Indentation
+echo whitespace#tabstop()
+set tabstop = whitespace#tabstop()		"Number of spaces for a tab
+set softtabstop = whitespace#tabstop()	"Softtabstop?
+set shiftwidth = whitespace#tabstop()		"Indentation
 
