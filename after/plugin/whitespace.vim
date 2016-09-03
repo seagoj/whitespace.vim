@@ -5,7 +5,11 @@ elseif whitespace#config() == 'tab'
 	set noexpandtab
 endif
 
-whitespace#tabstop()
+if &tabstop =~# '8'
+	set tabstop = 4
+endif
+
+echo &tabstop
 
 let &softtabstop = &tabstop
 let &shiftwidth = &tabstop
